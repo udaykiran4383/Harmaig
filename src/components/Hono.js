@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "./Hono.css";
-import { Link as ScrollLink } from 'react-scroll';
+
 import {Link as RouterLink } from "react-router-dom"
-import ArcOfRings from "../components/ArcOfRings";
+
 
 function Hono() {
   useEffect(() => {
