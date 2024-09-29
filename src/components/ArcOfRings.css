@@ -62,7 +62,7 @@ h4 {
 }
 .arcOfRingsphoto {
   margin-top: 20px;
-  background-image: url("arcofringphoto.jpg"); /* Replace with actual image path */
+
   background-size: cover;
   background-position: center;
   height: 90vh;
