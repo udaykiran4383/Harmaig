@@ -1,30 +1,15 @@
 import React from "react";
-import "./ArcOfRings.css";
-import Card from "./Card";
 
 function ArcOfRings() {
   return (
-    <section className="arc-of-rings" id="arc-of-rings">
-      <h4>Minimalist</h4>
-      <h2>Arc of Rings</h2>
-      <a href="#" className="shop-new-arrivals">
-        Shop new arrivals
-      </a>
-      <div className="arcOfRingsphoto"></div>
-      
-      <div className="arc-grid">
-        {/* <div className="arc-item">
-          <img src="images/silverring.jpg" alt="Silver Rouge Ring" />
-          <p>Silver Rouge Ring</p>
-        </div> */}
-        {/* <div className="arc-item">
-          <img src="images/gold-ridge-ring.jpg" alt="Gold Ridge Ring" />
-          <p>Gold Ridge Ring</p>
-        </div>
-        <div className="arc-item">
-          <img src="images/gold-stone-ring.jpg" alt="Gold Stone Ring" />
-          <p>Gold Stone Ring</p>
-        </div> */}
+    <section className="w-full text-center" id="arc-of-rings">
+  
+      <h2 className="text-3xl font-semibold mb-6">Majestic heritage</h2>
+ 
+      <div className="arcOfRingsphoto bg-cover bg-center h-[90vh] my-6"></div>
+
+      <div className="flex justify-evenly space-x-4 overflow-x-auto scrollbar-hide">
+        {/* Add arc items here as needed */}
       </div>
     </section>
   );

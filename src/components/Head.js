@@ -1,8 +1,4 @@
 import React, { useEffect } from "react";
-import "./Head.css";
-import { Link as ScrollLink } from 'react-scroll';
-import {Link as RouterLink } from "react-router-dom"
-import ArcOfRings from "../components/ArcOfRings";
 
 function Head() {
   useEffect(() => {
@@ -38,84 +34,32 @@ function Head() {
   };
 
   return (
-    <header className="header">
-       <div className="menu">
+    <header className="flex justify-start items-center p-2.5 px-10 bg-white border-b border-gray-300 h-[8vh] relative z-50 gap-5">
+      <div className="flex items-center gap-2">
         <nav role="navigation">
-          <div id="menuToggle">
-            <input type="checkbox" />
-            <div className=""></div>
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-              <div className="line"></div>
-              <ScrollLink to="arc-of-rings" smooth={true} duration={100} onClick={closeMenu}>
-                <li><h4>Rings</h4></li>
-              </ScrollLink>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Necklace</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Bracelate</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Anklet</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Hair Pin</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Men's Jewellery</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Children's Jewellery</h4></li>
-              </a>
-              <h4>Services</h4>
-              <p className="sub">Repairs</p>
-              <div className=" service">
-              
-              <p >Free of cost</p>
-              <p>Terms:</p>
-              <p>Additional gold weight  </p>
-              <p>
-              billed at current market rate
-              </p>
+          <div id="menuToggle" className="relative flex flex-col items-start justify-left">
+            <input type="checkbox" className="w-4 h-4 absolute z-30 opacity-0 cursor-pointer" />
+            <span className="w-full h-1 mb-[18.5%] bg-black relative rounded-md transform transition-transform origin-top-left duration-500 ease-cubic"></span>
+            <span className="w-full h-1 mb-[18.5%] bg-black relative rounded-md transform transition-transform origin-top-left duration-500 ease-cubic"></span>
+            <span className="w-full h-1 bg-black relative rounded-md transform transition-transform origin-bottom-left duration-500 ease-cubic"></span>
+            <ul id="menu" className="absolute top-0 left-0 bg-gray-200 p-10 pt-32 transform -translate-x-full transition-transform duration-500 ease-cubic list-none flex flex-col justify-left items-start">
+              <li className="py-2 text-lg">Free of cost</li>
+             
+              <li className="py-2 text-lg">Additional gold weight</li>
+              <li className="py-2 text-lg">billed at current market rate</li>
+       
+              <div className="text-gray-500">
+                <p>Contact Us on:</p>
+                <p>+91 70219 20836</p>
               </div>
-              <p className="sub">Personalisation</p>
-              <div className="personalisation">
-              <p> Contact Us on:</p>
-              <p>+91 8962675833</p>
-              </div>
-
-              <p className="sub">Art of Gifting</p>
-              
-              <div className="personalisation">
-              <p> Contact Us on:</p>
-              <p>+91 8962675833</p>
-              </div>
-              <h4>Connect</h4>
-              <p className="service" >Can we help you?</p>
-              
-              <p className="service">+91 8963675833</p>
+           
             </ul>
           </div>
         </nav>
-        <div className="menu-text">Menu</div>
-      </div> 
-      <button className="searchicon">
-        <img src="images/searchicon.jpg" alt="search" />
-        <input className="search" type="text" placeholder="Search" />
-      </button>
-      <div className="logo">HARMAIG</div>
-      <a className="sign-in">
-      <RouterLink to="/Login">
-        Login
-      </RouterLink>
-      <RouterLink to="/Signup">
-       
-        Sign in
-    
-      </RouterLink>  </a>
+      
+      </div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 text-2xl font-medium tracking-wide">HARMAIG</div>
+     
     </header>
   );
 }

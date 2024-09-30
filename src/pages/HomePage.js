@@ -3,10 +3,11 @@ import React, {useEffect}from "react";
 import Head from "../components/Head";
 import Hero from "../components/Hero";
 import Explore from "../components/Explore";
-import ArcOfRings from "../components/ArcOfRings";
-import Card from "../components/Card";
 
 
+import ImageSlider from "../components/slider";
+
+import ContactDetails from "../components/ContactDetails";
 function HomePage() {
   useEffect(() => {
     const style= document.createElement('style');
@@ -34,17 +35,11 @@ function HomePage() {
       <Head/>
       <Hero />
       <Explore />
-      <ArcOfRings />
-      <div className="Card">
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      </div>
+
+      <ImageSlider/>
+      <ContactDetails/>
+      
+
     </div>
   );
 }

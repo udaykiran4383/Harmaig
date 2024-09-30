@@ -52,33 +52,17 @@ function Hono() {
       
               <RouterLink to="/Category">
               <a onClick={closeMenu}>
-                <li><h4>Rings</h4></li>
+              
                 </a>
                 </RouterLink>
                 
-              <a onClick={closeMenu}>
-                <li><h4>Necklace</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Bracelate</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Anklet</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Hair Pin</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Men's Jewellery</h4></li>
-              </a>
-              <a href="#" onClick={closeMenu}>
-                <li><h4>Children's Jewellery</h4></li>
-              </a>
-              <h4>Services</h4>
+     
+         
+           
               <p className="sub">Repairs</p>
               <div className=" service">
               
-              <p >Free of cost</p>
+    
               <p>Terms:</p>
               <p>Additional gold weight  </p>
               <p>
